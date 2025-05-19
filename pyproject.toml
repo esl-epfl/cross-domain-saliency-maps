@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cross_domain_saliency_maps"
+version = "0.0.4"
+authors = [
+  { name="Christodoulos Kechris", email="christodoulos.kechris@epfl.ch" }
+]
+description = "A pytorch/tensorflow library for generating Cross-Domain saliency maps."
+readme = "README.md"
+requires-python = ">=3.10.16"
+dependencies = [
+  "tensorflow >= 2.13.0, <= 2.19",
+  "torch >= 2.6.0, <= 2.7",
+  "tqdm==4.67.1"
+  ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/esl-epfl/cross-domain-saliency-maps"
